@@ -59,9 +59,6 @@ A modern, performance-optimized search application for exploring global companie
 - **Search UX**: Clear feedback with minimum 3-character requirement
 - **Performance First**: All features optimized for speed and responsiveness
 
-## Future Enhancements
+## Extensible Architecture
 
-- Add sorting and filtering options
-- Implement advanced search with field targeting
-- Add detailed company profiles
-- Integrate real-time data updates
+The app is designed with a modular and maintainable architecture, making it easy to extend with additional features or data fields. The separation of components, data preprocessing, and utility functions allows for straightforward integration of new properties or related entities (e.g., BoardMembers, Offices) in the future.
