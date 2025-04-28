@@ -1,0 +1,56 @@
+.company-card {
+  background-color: #16213e;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #2a2a4a;
+  padding: 1.25rem;
+}
+
+.card-header {
+  margin-bottom: 1rem;
+}
+
+.company-name {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f1f1f1;
+}
+
+.company-industry {
+  font-size: 0.875rem;
+  color: #b2b2b2;
+}
+
+.card-info {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-section h3 {
+  font-size: 0.875rem;
+  margin: 0 0 0.5rem 0;
+  color: #b2b2b2;
+  font-weight: 500;
+}
+
+.info-section p {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #f1f1f1;
+}
+
+.label {
+  color: #b2b2b2;
+  margin-right: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .card-content {
+    padding: 1rem;
+  }
+
+  .company-name {
+    font-size: 1.125rem;
+  }
+}

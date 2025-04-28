@@ -1,0 +1,91 @@
+.company-list {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.results-header {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #b2b2b2;
+  border-bottom: 1px solid #2a2a4a;
+  padding-bottom: 0.75rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #16213e;
+  border-radius: 0.5rem;
+  animation: fadeIn 0.4s ease-in-out;
+  border: 1px solid #2a2a4a;
+}
+
+.empty-state h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #f1f1f1;
+}
+
+.empty-state p {
+  color: #b2b2b2;
+  font-size: 1.125rem;
+}
+
+.search-more-message {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(67, 97, 238, 0.1);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(67, 97, 238, 0.2);
+}
+
+.search-more-message p {
+  color: #b2b2b2;
+  font-size: 1.125rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .company-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .empty-state {
+    padding: 3rem 1.5rem;
+  }
+
+  .empty-state h2 {
+    font-size: 1.25rem;
+  }
+
+  .empty-state p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .company-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
